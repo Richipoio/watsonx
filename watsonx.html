@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            background: #005599;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            background: #004477;
+            border-radius: 5px;
+        }
+        .container {
+            background: white;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #003366;
+        }
+        p {
+            color: #444;
+            font-size: 18px;
+        }
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Cloud Center - Innovación y Tecnología</div>
+    <div class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+    </div>
+    <div class="container">
+        <h1>Bienvenido a Cloud Center</h1>
+        <p>Somos líderes en innovación y tecnología. Descubre cómo podemos ayudarte a transformar tu negocio.</p>
+    </div>
+    <div class="footer">&copy; 2025 Cloud Center. Todos los derechos reservados.</div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "c385822e-d81d-4335-be9a-3a23fcf04021", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "6914fa87-09c9-4d80-b6ae-423a74c45c00", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        (function(){
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+            t.onload = () => console.log("Watson Assistant Chat loaded successfully.");
+            t.onerror = (err) => console.error("Error loading Watson Assistant Chat:", err);
+            document.head.appendChild(t);
+        })();
+    </script>
+</body>
+</html>
